@@ -4,19 +4,19 @@ This project use docker with ngnix to serve html pages in the github reapo, and 
   
 - Dokerfile : 
     
-To specify how the docker will be and what it has , as it will to get nginx image and copy file to the html serve directory of ngnix and expose port and run nginx when the docker start.
+>To specify how the docker will be and what it has , as it will to get nginx image and copy file to the html serve directory of ngnix and expose port and run nginx when the docker start.
   
 - docker-compose.yml : 
    
-To build and start the docker and specify any other configuration we want.
+>To build and start the docker and specify any other configuration we want.
   
 - docker-compose-prod file :  
   
-same as priviose file but used in production and on deployment.
+>same as priviose file but used in production and on deployment.
   
 - build.yml file :  
   
-a github action workflow file, to automat deployment of docker image to docker hub , but before that we clone the repo build and publish docker image to docker hub. so we can add another instruction to make docker run in EC2 or another place using the image
+>a github action workflow file, to automat deployment of docker image to docker hub , but before that we clone the repo build and publish docker image to docker hub. so we can add another instruction to make docker run in EC2 or another place using the image
 
 
 ## To test the repo localy:
